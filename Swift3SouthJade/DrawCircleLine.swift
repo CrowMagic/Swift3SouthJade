@@ -82,16 +82,5 @@ class DrawCircleLine: UIView {
             contextLine2.restoreGState()
 
         }
-        
-
-        
     }
-
-
-
-    
-    
-    
-    
-    
 }

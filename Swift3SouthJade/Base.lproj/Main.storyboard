@@ -30,7 +30,7 @@
         <!--分类-->
         <scene sceneID="R0f-3m-dV8">
             <objects>
-                <viewController id="6Y6-bu-O1s" sceneMemberID="viewController">
+                <viewController id="6Y6-bu-O1s" customClass="ClassifyViewController" customModule="Swift3SouthJade" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZL3-L7-jwW"/>
                         <viewControllerLayoutGuide type="bottom" id="Qdi-rl-n1o"/>
@@ -90,6 +90,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ntD-Db-vED" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Yjk-Vq-tv7">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
