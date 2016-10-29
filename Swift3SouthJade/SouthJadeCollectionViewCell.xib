@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SouthJadeCollectionViewCell" customModule="Swift3SouthJade" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="367"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="367"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NRT-Fs-dFd"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMg-gl-ZJK">
+                        <color key="backgroundColor" red="1" green="0.17805363160000001" blue="0.059385363019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="cob-4a-gW8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-2p-wDk">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="HHN-KF-mAh"/>
+                            <constraint firstAttribute="height" constant="50" id="ecI-X3-4bN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dra-yW-3Sw">
+                        <color key="backgroundColor" red="1" green="0.49937187500000002" blue="0.51168688799999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="1NS-lJ-kEG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NRT-Fs-dFd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CC1-cx-o1I"/>
+                <constraint firstAttribute="trailing" secondItem="BZS-2p-wDk" secondAttribute="trailing" id="PZG-4K-qyY"/>
+                <constraint firstItem="aMg-gl-ZJK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wax-gm-w1I"/>
+                <constraint firstItem="dra-yW-3Sw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XLe-IQ-QtN"/>
+                <constraint firstAttribute="trailing" secondItem="aMg-gl-ZJK" secondAttribute="trailing" id="YCa-UZ-bKp"/>
+                <constraint firstItem="BZS-2p-wDk" firstAttribute="top" secondItem="NRT-Fs-dFd" secondAttribute="bottom" id="bEk-Tf-XjI"/>
+                <constraint firstAttribute="trailing" secondItem="NRT-Fs-dFd" secondAttribute="trailing" id="c5h-an-Jpf"/>
+                <constraint firstItem="aMg-gl-ZJK" firstAttribute="top" secondItem="BZS-2p-wDk" secondAttribute="bottom" id="mdB-DP-TlK"/>
+                <constraint firstItem="BZS-2p-wDk" firstAttribute="leading" secondItem="dra-yW-3Sw" secondAttribute="trailing" id="rNO-7f-aci"/>
+                <constraint firstItem="aMg-gl-ZJK" firstAttribute="top" secondItem="dra-yW-3Sw" secondAttribute="bottom" id="sOS-C7-ssL"/>
+                <constraint firstItem="NRT-Fs-dFd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vl7-79-S5H"/>
+                <constraint firstAttribute="bottom" secondItem="aMg-gl-ZJK" secondAttribute="bottom" id="wNq-Gv-WEi"/>
+            </constraints>
+            <size key="customSize" width="286" height="367"/>
+            <connections>
+                <outlet property="cellImageView" destination="NRT-Fs-dFd" id="kfE-ff-lxV"/>
+                <outlet property="cellPriceLabel" destination="aMg-gl-ZJK" id="gwI-li-eoV"/>
+                <outlet property="cellSignetImageView" destination="BZS-2p-wDk" id="prE-gh-CdH"/>
+                <outlet property="cellTitleLabel" destination="dra-yW-3Sw" id="A6p-IM-nOm"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="224.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

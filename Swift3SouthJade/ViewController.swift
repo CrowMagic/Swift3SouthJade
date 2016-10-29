@@ -140,6 +140,7 @@ class ViewController: UIViewController {
         
         let nameArray = ["南玉", "品牌", "店铺", "鉴赏", "大师", "活动"]
         
+        
         for(index, titleName) in nameArray.enumerated() {
             let btn = UIButton(type: .custom)
             //            btn.backgroundColor = .redColor()
@@ -168,7 +169,7 @@ class ViewController: UIViewController {
                 btn.titleEdgeInsets = UIEdgeInsetsMake(-35, -80, 0, 0)
             }
             
-            btn.tag = 100 + index
+            btn.tag = index
             btn.addTarget(self, action: #selector(addClick), for: .touchUpInside)
             btn.setTitle(titleName, for: .normal)
             btn.setImage(UIImage(named: titleName), for: .normal)
@@ -213,7 +214,7 @@ class ViewController: UIViewController {
     }
     
     func addClick(sender: UIButton) {
-        
+        navigationController?.pushViewController(SouthJadeViewController(), animated: true)
     }
     
     

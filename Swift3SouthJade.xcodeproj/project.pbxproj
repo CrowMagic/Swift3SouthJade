@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944D5C5A1DC0B8CC008ED801 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C541DC0B873008ED801 /* SwiftyJSON.framework */; };
+		942F28761DC2DF0E0071CC55 /* CollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F28751DC2DF0E0071CC55 /* CollectionViewWaterfallLayout.swift */; };
+		942F28791DC2EEAC0071CC55 /* ClassifyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F28771DC2EEAC0071CC55 /* ClassifyCollectionViewCell.swift */; };
+		942F287A1DC2EEAC0071CC55 /* ClassifyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942F28781DC2EEAC0071CC55 /* ClassifyCollectionViewCell.xib */; };
+		942F287B1DC2F0F60071CC55 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C501DC0B854008ED801 /* Alamofire.framework */; };
+		942F287C1DC2F0F60071CC55 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C501DC0B854008ED801 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		942F28801DC32E050071CC55 /* ShoppingCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F287F1DC32E050071CC55 /* ShoppingCarViewController.swift */; };
+		942F28861DC33DC10071CC55 /* SouthJadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F28851DC33DC10071CC55 /* SouthJadeViewController.swift */; };
+		942F28891DC33FE70071CC55 /* SouthJadeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F28871DC33FE70071CC55 /* SouthJadeCollectionViewCell.swift */; };
+		942F288A1DC33FE70071CC55 /* SouthJadeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942F28881DC33FE70071CC55 /* SouthJadeCollectionViewCell.xib */; };
 		944D5C5B1DC0B8CC008ED801 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C541DC0B873008ED801 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		944D5C5D1DC0B8D6008ED801 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C521DC0B866008ED801 /* Kingfisher.framework */; };
 		944D5C5E1DC0B8D6008ED801 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C521DC0B866008ED801 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		944D5C5F1DC0B8DA008ED801 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C501DC0B854008ED801 /* Alamofire.framework */; };
-		944D5C601DC0B8DA008ED801 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 944D5C501DC0B854008ED801 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		944D5C621DC0B949008ED801 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D5C611DC0B949008ED801 /* ClassifyViewController.swift */; };
 		94CF22721DBF290D0035CDA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF22711DBF290D0035CDA9 /* AppDelegate.swift */; };
 		94CF22741DBF290D0035CDA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF22731DBF290D0035CDA9 /* ViewController.swift */; };
@@ -20,8 +25,6 @@
 		94CF22791DBF290D0035CDA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CF22781DBF290D0035CDA9 /* Assets.xcassets */; };
 		94CF227C1DBF290D0035CDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CF227A1DBF290D0035CDA9 /* LaunchScreen.storyboard */; };
 		94CF22841DBF2EC80035CDA9 /* DrawCircleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF22831DBF2EC80035CDA9 /* DrawCircleLine.swift */; };
-		94EE13211DC18F160020CAFE /* WaterfallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE13201DC18F150020CAFE /* WaterfallFlowLayout.swift */; };
-		94EE13231DC18F920020CAFE /* WWGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE13221DC18F920020CAFE /* WWGood.swift */; };
 		94FD4E611DC0C1B600B1019C /* ModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD4E601DC0C1B600B1019C /* ModuleData.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +36,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				944D5C5E1DC0B8D6008ED801 /* Kingfisher.framework in Embed Frameworks */,
-				944D5C601DC0B8DA008ED801 /* Alamofire.framework in Embed Frameworks */,
+				942F287C1DC2F0F60071CC55 /* Alamofire.framework in Embed Frameworks */,
 				944D5C5B1DC0B8CC008ED801 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -42,10 +45,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		942F28751DC2DF0E0071CC55 /* CollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		942F28771DC2EEAC0071CC55 /* ClassifyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyCollectionViewCell.swift; sourceTree = "<group>"; };
+		942F28781DC2EEAC0071CC55 /* ClassifyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyCollectionViewCell.xib; sourceTree = "<group>"; };
+		942F287F1DC32E050071CC55 /* ShoppingCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarViewController.swift; sourceTree = "<group>"; };
+		942F28851DC33DC10071CC55 /* SouthJadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthJadeViewController.swift; sourceTree = "<group>"; };
+		942F28871DC33FE70071CC55 /* SouthJadeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthJadeCollectionViewCell.swift; sourceTree = "<group>"; };
+		942F28881DC33FE70071CC55 /* SouthJadeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SouthJadeCollectionViewCell.xib; sourceTree = "<group>"; };
 		944D5C501DC0B854008ED801 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		944D5C521DC0B866008ED801 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		944D5C541DC0B873008ED801 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		944D5C561DC0B8B1008ED801 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		944D5C611DC0B949008ED801 /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
 		94CF226E1DBF290D0035CDA9 /* Swift3SouthJade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift3SouthJade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CF22711DBF290D0035CDA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +64,6 @@
 		94CF227B1DBF290D0035CDA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94CF227D1DBF290D0035CDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CF22831DBF2EC80035CDA9 /* DrawCircleLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCircleLine.swift; sourceTree = "<group>"; };
-		94EE13201DC18F150020CAFE /* WaterfallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallFlowLayout.swift; sourceTree = "<group>"; };
-		94EE13221DC18F920020CAFE /* WWGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWGood.swift; sourceTree = "<group>"; };
 		94FD4E601DC0C1B600B1019C /* ModuleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,15 +72,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944D5C5D1DC0B8D6008ED801 /* Kingfisher.framework in Frameworks */,
-				944D5C5F1DC0B8DA008ED801 /* Alamofire.framework in Frameworks */,
-				944D5C5A1DC0B8CC008ED801 /* SwiftyJSON.framework in Frameworks */,
+				942F287B1DC2F0F60071CC55 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942F287D1DC2F1370071CC55 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				944D5C611DC0B949008ED801 /* ClassifyViewController.swift */,
+				942F28771DC2EEAC0071CC55 /* ClassifyCollectionViewCell.swift */,
+				942F28781DC2EEAC0071CC55 /* ClassifyCollectionViewCell.xib */,
+			);
+			name = Classify;
+			sourceTree = "<group>";
+		};
+		942F287E1DC2F1460071CC55 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				942F28751DC2DF0E0071CC55 /* CollectionViewWaterfallLayout.swift */,
+			);
+			name = Waterfall;
+			sourceTree = "<group>";
+		};
 		944D5C4F1DC0B852008ED801 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +110,6 @@
 		94CF22651DBF290D0035CDA9 = {
 			isa = PBXGroup;
 			children = (
-				944D5C561DC0B8B1008ED801 /* Alamofire.framework */,
 				94CF22701DBF290D0035CDA9 /* Swift3SouthJade */,
 				94CF226F1DBF290D0035CDA9 /* Products */,
 				944D5C4F1DC0B852008ED801 /* Frameworks */,
@@ -108,10 +130,13 @@
 				94CF22711DBF290D0035CDA9 /* AppDelegate.swift */,
 				94CF22731DBF290D0035CDA9 /* ViewController.swift */,
 				94CF22831DBF2EC80035CDA9 /* DrawCircleLine.swift */,
-				944D5C611DC0B949008ED801 /* ClassifyViewController.swift */,
-				94EE13201DC18F150020CAFE /* WaterfallFlowLayout.swift */,
-				94EE13221DC18F920020CAFE /* WWGood.swift */,
+				942F28851DC33DC10071CC55 /* SouthJadeViewController.swift */,
+				942F28871DC33FE70071CC55 /* SouthJadeCollectionViewCell.swift */,
+				942F28881DC33FE70071CC55 /* SouthJadeCollectionViewCell.xib */,
+				942F287D1DC2F1370071CC55 /* Classify */,
+				942F287E1DC2F1460071CC55 /* Waterfall */,
 				94FD4E601DC0C1B600B1019C /* ModuleData.swift */,
+				942F287F1DC32E050071CC55 /* ShoppingCarViewController.swift */,
 				94CF22751DBF290D0035CDA9 /* Main.storyboard */,
 				94CF22781DBF290D0035CDA9 /* Assets.xcassets */,
 				94CF227A1DBF290D0035CDA9 /* LaunchScreen.storyboard */,
@@ -181,6 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942F287A1DC2EEAC0071CC55 /* ClassifyCollectionViewCell.xib in Resources */,
+				942F288A1DC33FE70071CC55 /* SouthJadeCollectionViewCell.xib in Resources */,
 				94CF227C1DBF290D0035CDA9 /* LaunchScreen.storyboard in Resources */,
 				94CF22791DBF290D0035CDA9 /* Assets.xcassets in Resources */,
 				94CF22771DBF290D0035CDA9 /* Main.storyboard in Resources */,
@@ -195,12 +222,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				944D5C621DC0B949008ED801 /* ClassifyViewController.swift in Sources */,
+				942F28791DC2EEAC0071CC55 /* ClassifyCollectionViewCell.swift in Sources */,
 				94FD4E611DC0C1B600B1019C /* ModuleData.swift in Sources */,
-				94EE13211DC18F160020CAFE /* WaterfallFlowLayout.swift in Sources */,
-				94EE13231DC18F920020CAFE /* WWGood.swift in Sources */,
 				94CF22841DBF2EC80035CDA9 /* DrawCircleLine.swift in Sources */,
+				942F28861DC33DC10071CC55 /* SouthJadeViewController.swift in Sources */,
 				94CF22741DBF290D0035CDA9 /* ViewController.swift in Sources */,
+				942F28891DC33FE70071CC55 /* SouthJadeCollectionViewCell.swift in Sources */,
 				94CF22721DBF290D0035CDA9 /* AppDelegate.swift in Sources */,
+				942F28761DC2DF0E0071CC55 /* CollectionViewWaterfallLayout.swift in Sources */,
+				942F28801DC32E050071CC55 /* ShoppingCarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
